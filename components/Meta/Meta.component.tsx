@@ -1,6 +1,6 @@
 import Head from "next/head";
 import React, { HTMLAttributes } from "react";
-import { siteInfo } from "config/data/site.data";
+import siteInfo from "config/data/site.data";
 
 interface MetaProps extends HTMLAttributes<HTMLHeadElement> {
   title: string;
