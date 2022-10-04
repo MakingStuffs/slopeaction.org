@@ -15,6 +15,7 @@ const Home: NextPage = () => {
         description={pages.homePage.description}
         favicon={pages.homePage.favicon}
         url={pages.homePage.slug}
+        socialImage={`https://slopeaction.org${pages.homePage.socialImage}`}
       />
       <main>
         <Section>

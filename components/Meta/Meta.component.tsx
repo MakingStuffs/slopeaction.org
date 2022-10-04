@@ -8,6 +8,7 @@ interface MetaProps extends HTMLAttributes<HTMLHeadElement> {
   url: string;
   favicon?: string;
   siteName?: string;
+  socialImage?: string;
 }
 
 const Meta: React.FC<MetaProps> = ({
@@ -16,6 +17,7 @@ const Meta: React.FC<MetaProps> = ({
   description,
   siteName,
   favicon,
+  socialImage,
   ...rest
 }) => (
   <Head {...rest}>
@@ -30,12 +32,15 @@ const Meta: React.FC<MetaProps> = ({
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content={siteName} />
     <link rel="icon" href={favicon || "/favicon.ico"} />
+    <meta property="og:image" content={socialImage || ""} />
+    <meta name="twitter:image" content={socialImage || ""} />
   </Head>
 );
 
 Meta.defaultProps = {
   favicon: siteInfo.favicon,
   siteName: siteInfo.name,
+  socialImage: "",
 };
 
 export default Meta;
