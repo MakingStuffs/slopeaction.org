@@ -7,15 +7,12 @@ type PageData = {
 };
 
 const homePage: PageData = {
-  title: "Home | This is the home page",
-  description: "A bit of information about this home page",
+  title: "Home | Slope Action | Seeking Justice for Slope Finance Victims",
+  description:
+    "Slope Action was founded by the victims of the Slope Finance wallet leak which lead to users losing a collective $8m USD in cryptocurrencies.",
   slug: "/",
+  favicon: "/favicon.ico",
+  socialImage: "/assets/images/marketing/share-image.jpeg",
 };
 
-const aboutPage: PageData = {
-  title: "About | This is the about us page",
-  description: "A bit of information about this about us page",
-  slug: "/about",
-};
-
-export default { homePage, aboutPage };
+export default { homePage };
